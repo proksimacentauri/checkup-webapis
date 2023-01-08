@@ -26,3 +26,12 @@
 /root/salt/precourse/adressapi/obj/Debug/net6.0/adressapi.pdb
 /root/salt/precourse/adressapi/obj/Debug/net6.0/adressapi.genruntimeconfig.cache
 /root/salt/precourse/adressapi/obj/Debug/net6.0/ref/adressapi.dll
+/root/salt/precourse/adressapi/bin/Debug/net6.0/client/package-lock.json
+/root/salt/precourse/adressapi/bin/Debug/net6.0/client/package.json
+/root/salt/precourse/adressapi/bin/Debug/net6.0/client/public/manifest.json
+/root/salt/precourse/adressapi/bin/Debug/net6.0/System.Web.Cors.dll
+/root/salt/precourse/adressapi/bin/Debug/net6.0/System.Net.Http.Formatting.dll
+/root/salt/precourse/adressapi/bin/Debug/net6.0/System.Web.Http.dll
+/root/salt/precourse/adressapi/bin/Debug/net6.0/System.Web.Http.Cors.dll
+/root/salt/precourse/adressapi/bin/Debug/net6.0/Newtonsoft.Json.dll
+/root/salt/precourse/adressapi/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll

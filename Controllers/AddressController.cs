@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using adressapi.Models;
+using System.Web.Http.Cors;
 
 namespace adressapi.Controllers;
 
 [ApiController]
+[EnableCors(origins: "http://localhost:3000", headers: "*", methods: "*")]
 [Route("/api/[controller]")]
 public class AddressController : ControllerBase
 {
@@ -24,10 +26,10 @@ public class AddressController : ControllerBase
     return _db.Addresses.Find(d => d.Id == id);
   }
   
-  [HttpGet("{streetname:alpha}")]
-  public List<Address>? GetAddressesByStreet(string streetname)
+  [HttpGet("{name:alpha}")]
+  public List<Address>? GetAddressesByStreet(string name)
   {
-    return _db.Addresses.FindAll(d => d.StreetName == streetname);
+    return _db.Addresses.FindAll(d => d.Name == name);
   }
 
   [HttpDelete("{id}")]
@@ -45,12 +47,14 @@ public class AddressController : ControllerBase
   public Address? UpdateAddressById(int id, CreateAddressRequest request)
   {
     var index = GetAddressById(id);
-    var nextId = _db.Addresses.Count + 1;
+    var nextId = _db.Addresses.Count + 10;
     var updateAddress = new Address()
     {
       Id = id,
+      Name = request.Name,
+      Email = request.Email,
       StreetName = request.StreetName,
-      StreetNo = request.StreetNo,
+      Telephone = request.Telephone,
       PostalCode = request.PostalCode,
       City = request.City,
     };
@@ -69,8 +73,10 @@ public class AddressController : ControllerBase
     var newAddress = new Address()
     {
       Id = nextId,
+      Name = request.Name,
+      Email = request.Email,
       StreetName = request.StreetName,
-      StreetNo = request.StreetNo,
+      Telephone = request.Telephone,
       PostalCode = request.PostalCode,
       City = request.City,
     };

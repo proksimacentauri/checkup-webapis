@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.Contact-item {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  margin: 8px;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.Contact-edit {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  margin: 8px;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.Contact-list {
+  font-size: 16px
+}
+
+.address {
+  display: flex;
+}
+
+.text {
+  margin-left: .5rem;
+}
+
+.email {
+  font-size: 20px;
+  color: #8b949e;
+  font-weight: 300;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.telephone {
+  font-size: 14px;
+  color: #8b949e;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  flex-direction: column;
+}
+
+.title-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  border: 1px #30363d solid;
+  border-radius: 6px;
+  color: #c9d1d9;
+  padding: 8px;
+  background-color: #0d1117;
+  outline: none;
+  display: flex;
+  margin: 8px;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;   
+  justify-content: space-between;
+}
